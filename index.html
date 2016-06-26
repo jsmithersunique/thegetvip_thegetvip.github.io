@@ -26,20 +26,23 @@ Floor action, speakers, committees, delegation sidebars, your companions, yes, e
 <div id="vid-box"><!-- Stream goes here --></div>
 
 <form name="streamForm" id="stream" action="#" onsubmit="return stream(this);">
-    <input type="text" name="streamname" id="streamname" placeholder="Pick a stream name!" />
-    <input type="submit" name="stream_submit" value="Stream"> 
+    <input type="hidden" value="FreedomShare" type="text" name="streamname" id="streamname" placeholder="Pick a stream name!" />
+    <input type="submit" name="stream_submit" value="Stream Now"> 
     <div id="stream-info">Watching: <span id="here-now">0</span></div>
 </form>
 
 <form name="watchForm" id="watch" action="#" onsubmit="return watch(this);">
-	<input type="text" name="number" placeholder="Enter stream to join!" />
+	<input type="hidden" value="FreedomShare" type="text" name="number" placeholder="Enter stream to join!" />
 	<input type="submit" value="Watch"/>
 </form>
+
 <div id="inStream">
 	<button id="end" onclick="end()">Done</button> <br>
 	Generate Embed: <button onclick="genEmbed(400,600)">Tall</button><button onclick="genEmbed(600,400)">Wide</button><button onclick="genEmbed(500,500)">Square</button><br>
 	<div id="embed-code"></div>
 </div>
+
+
 </td>
 <td><img src="https://thegetvip.github.io/rsbn.2016.png"></td>
 </tr>  
