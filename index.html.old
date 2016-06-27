@@ -11,6 +11,9 @@
 <script src="https://cdn.pubnub.com/pubnub-3.7.14.min.js"></script>
 <script src="webrtc.js"></script>
 <script src="/rtc-controller.js"></script>
+        <script src="signaling_channel.js"></script>
+        <script src="sdp.js"></script> 
+        <script src="main.js"></script>
     <section class="main-content">
       <b><font color=red" style="color:red;font-size=24pt;">RSBN</font> <font color=red" style="color:navy;font-size=24pt;">FreedomShare</font></b><br />
 ...stream your democracy experience at the RNC to our worldwide viewers!       
