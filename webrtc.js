@@ -27,7 +27,7 @@ function pageReady()
     }
     else
     {
-        alert('Your browser does not support getUserMedia API - please try Chrome or Firefox on Android.');
+        alert('Your browser does not support getUserMedia API - please try Chrome on Android.');
     }
 }
 
