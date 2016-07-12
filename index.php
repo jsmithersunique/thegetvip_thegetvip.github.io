@@ -6,8 +6,6 @@ getxapps();  // API to Wowza works - this gets list of named app on server
 ///////////////////////////////////////////////////////////////////////////
 ?>
 <!doctype html xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
-<!--  this comment proves a successful push overwriting upload to Github. -->
-<meta charset="UTF-8">
 <html>  
     <head>
     <title>Innoc.us - TV from your event</title>
