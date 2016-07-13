@@ -6,6 +6,7 @@ getxapps();  // API to Wowza works - this gets list of named app on server
 ///////////////////////////////////////////////////////////////////////////
 ?>
 <!doctype html xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
+<!--  pushed to develop are working - noe trying to see this in master -->
 <html>  
     <head>
     <title>Innoc.us - TV from your event</title>
