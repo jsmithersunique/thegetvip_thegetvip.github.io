@@ -6,10 +6,10 @@ getxapps();  // API to Wowza works - this gets list of named app on server
 ///////////////////////////////////////////////////////////////////////////
 ?>
 <!doctype html xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
-<!--  pushed to develop are working - noe trying to see this in master -->
+<meta charset="UTF-8">
 <html>  
     <head>
-    <title>Innoc.us - TV from your event</title>
+    <title>TheGet.io - multi-cam TV NOW from your event with your thumbs and chums.  This is your tv control room.</title>
     <meta charset="utf-8"/>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
@@ -22,69 +22,57 @@ getxapps();  // API to Wowza works - this gets list of named app on server
     <link rel="shortcut icon" href="vidfav.png" />
     <link rel="icon" type="image/png" href="vidfav.png" />
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  <style>
-  #toggle {
-    width: 28px;
-    height: 28px;
-    background: transparent;
-  }
-  </style>
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
-</head>
+    </head>
 <body style="background:url(u.jpg) no-repeat center center fixed; background-size:cover; 
-                 font-family:verdana,helvetica,swiss;font-size:10pt;color:lightblue;">
+             font-family:verdana,helvetica,swiss;font-size:10pt;color:lightblue;">
         
 <script>
 // copy to clipboard: https://jsfiddle.net/jfriend00/v9g1x0o6/
 $(document).ready(function () {
             $('#dialog').dialog({
-                autoOpen: false, width:'auto', height:300
+                autoOpen: false, width:'75%', height:450
                 //title: 'Final Broadcast SetUp'
             });
             $('#pmenu').dialog({
-                autoOpen: false, width:'auto', height:300
+                autoOpen: false, width:'auto', height:450
                 //title: 'Final Broadcast SetUp'
             });
             $('#showmenu').click(function () {
                 $('#dialog').dialog('open');
+                $('#handle').blur();
             });
             $('#showxmenu').click(function () {
                 $('#dialog').dialog('open');
             });
-    document.getElementById('msg').innerHTML = "Please approve using your cam/mic - can't stream without that..."; 
+    
+document.getElementById('msg').innerHTML = "Please approve using your cam/mic - can't stream your TV without that..."; 
   
 });
-    
-
-//$("#showmenu").click(function() {
-//    $("#dialog").dialog("open");
-//    return false;
-//  });    
-    
-//$( document ).hover(function() {
-//  $( "#toggle" ).effect( "shake" );
-//});
 </script>
 <span id="showmenu">      
 <img id="toggle" style="float:right" height="28px" src="tinymenu.png" /></span>
         
 <center> 
-    <table align="center" width="95%" height="99%" cellpadding="4"  border="0">
+    <table style="border:0; " align="center" width="95%" height="99%" cellpadding="4"  border="0">
      <tr>
          <td  valign="top" align="center" width="16%">
              <img src="tv.jpg" width="95%"/><br />&nbsp;<br />
-             <img src="tv.jpg" width="95%"/><br />&nbsp;<br /><img src="tv.jpg" width="95%"/><br />&nbsp;<br /><img src="tv.jpg" width="95%"/></td>       
+             <img src="tv.jpg" width="95%"/><br />&nbsp;<br /><img src="tv.jpg" width="95%"/><br />&nbsp;<br /><img src="tv.jpg" width="95%"/>
+             <br />&nbsp;<br /><span style="font-size:8pt;">Stream to<br /><img src="fb.jpg" width="50"/><br />(not connected)</span>
+</td>       
         <td valign="top" style="vertical-align:super;" height="10%" width="66%">
                
-         <!--  <?php if (isset($_SESSION["AUTH"])) {print '<input style="" type="button" id="start" onclick="start(true)" value="Start Streaming Your Cam Now"></input><br />&nbsp;<br />'; } ?>
+<!--       <?php if (isset($_SESSION["AUTH"])) {print '<input style="" type="button" id="start" onclick="start(true)" 
+               value="Start Streaming Your Cam Now"></input><br />&nbsp;<br />'; } ?>
            <?php if (! isset($_SESSION["AUTH"])) { print '<font style="font-size:10pt;color:lightblue;"><i>Not Live Yet.</i>
            &nbsp;&nbsp;Click <a href="#" style="font-size:10pt;color:lightblue;" id="showxmenu"> the
              menu</a> at upper right for your broadcast/meeting/party/class choices.</font>';} ?>
 -->
 <div id="wrapper">
-    <a href="#" id=showxmenu><video  style="vertical-align:super; margin:0; padding:0; border:0; width:99%; height:95%" valign="top" id="localVideo" autoplay muted ></video></a><br /><br />&nbsp;<br /><br />&nbsp;<br />
-    <span style="vertical-align:super; margin-left:30px; margin-right:30px; text-shadow: 1px 1px 1px #555;" id="msg"></span>
+<a href="#" id=showxmenu><video  style="vertical-align:super; margin:0; padding:0; border:0; width:99%; height:95%" valign="top" id="localVideo" autoplay muted >
+</video>
+</a><br />
+<span style="vertical-align:super; margin-left:30px; margin-right:30px; text-shadow: 1px 1px 1px #555;" id="msg"></span>
 </div>
                     <style>
                        #wrapper {
@@ -97,54 +85,60 @@ $(document).ready(function () {
                        }
                    </style>
             
-           <span style="text-shadow: 1px 1px 1px #555;">Touch or click a video to move it/send it to the main video feed everyone sees.</span>
-
+<span style="margin:auto; display:block; text-align:center; text-shadow: 1px 1px 1px #555; font-size:9pt;">
+Touch or click any video to move it/send it to the main video feed everyone sees.<br />
+Tweet, text, email or otherwise notify your friends (with or without cams) to join you at: <?php print $_SESSION["subd"] ?>.TheGet.io</span>
 </td>
-   <td valign="top" width="16%">
-       <img src="tv.jpg" width="95%"/><br />&nbsp;<br /><img src="tv.jpg" width="95%"/><br />&nbsp;<br /><img src="tv.jpg" width="95%"/><br />&nbsp;<br /><img src="tv.jpg" width="95%"/>
+   <td valign="top"  align="center"  width="16%">
+       <img src="tv.jpg" width="95%"/><br />&nbsp;<br /><img src="tv.jpg" width="95%"/><br />&nbsp;<br /><img src="tv.jpg" width="95%"/><br />&nbsp;<br /><img src="tv.jpg" width="95%"/><br />&nbsp;<br /><span style="font-size:8pt;">Stream to<br /><img src="yt.png" width="50"/><br />(not connected)</span>
          </td>
 </tr>
-    </table></center>
+</table></center>
 
 		<div>
 			<span id="sdpDataTag">
 			</span>
 		</div>
     
-<div id="dialog" style="width:75%;font-size:9pt;font-color:navy;overflow:auto; height:300;" title="GO LIVE Menu for Innoc.us">
-<style>width:75%;font-size:9pt;font-color:navy;overflow:auto; height:300;</style>                
-<p><b>First, select a short handle:</b><input type=text length="15" id ="handle" name="handle" placeholder="myHandle" />&nbsp;...and give us your email <input type=text length="15" name="email" placeholder="me@myEmail.com" /> <br />
-                    (make it short - suitable for tweeting) You'll direct your friends to <font color=red><i><span id="txtout"></span></i>.innoc.us</font> to join and contribute their video (or they can just watch here, or on your<br /> 
-                    Youtube and/or Facebook pages, or watch on your own web page).  We give you buttons/text/link to share instantly on major social media channels.</p>  
-                
-<p><b>Next, select the MODE you wish to operate in:</b><br />
-                ALL modes allow you to stream to your YouTube and Facebook pages, plus your own web site.</p>
-                
-<P><b><input name=mode value="D" type=radio>&nbsp;I will be the Director - 55 minute broadcast - $7.99</b><br />
-Only you will have the controls choose which of your friends' TV pictures go out on the main feed. <br />
-    Suitable for unschduled parties, dining parties, events, etc.  Up to 8 people with cams can contribute; unlimited viewers.</P>
-                
-<P><b><input name=mode value="E" type=radio>&nbsp;Everybody is their own Director - 55 minute broadcast - $14.99</b><br />
-Everyone has the controls to choose which of your friends' TV pictures they see in their viewing feed<br />
-    if viewing at Innoc.us. (Your own choice still goes to Youtube, Facebook, your own web page.)<br />
-    Suitable for unschduled parties, dining parties, events, etc.  Up to 8 people with cams can contribute; unlimited viewers.</P>
+<div id="dialog" style="color:navy; width:75%; font-size:14pt; overflow:auto; height:350;" title="GO LIVE Menu for TheGet.io">
+<style>
+.pop td {-moz-border-radius:8px; -webkit-border-radius:8px; border-radius:8px; 
+ border:2px solid lightgray; }
+.pop input { background:url('input.gif') norepeat left top; padding:3px; -moz-border-radius:8px; -webkit-border-radius:8px; border-radius:8px; outline:none;}
+</style><a name="a">&nbsp;</a>
+<table class="pop" cellpadding="10" cellspacing="15" width="100%" style="-moz-border-radius:8px; -webkit-border-radius:8px; border-radius:8px; 
+ border:2px solid lightgray; ">
+<tr><td style="color:navy;" colspan="3">                
+<p><b>First, pick a short name for your TV channel:</b>&nbsp;&nbsp;<input  class="pop" type=text length="10" id ="handle" name="handle" placeholder="myChannel" /><br />you'll direct your friends to <font color=red><i><span id="txtout"></span></i>.TheGet.io</font> - make it short - for easy tweeting!</span></p>  
+</td></tr>
+<td  valign="top" width="15%" style="color:navy;"><b><input type=radio>Solo Control Room</b><br />
+<font style="font-size:10pt;">Everyone sees only the picture you have chosen in your big center stream.  You have total & full control, 
+but your curious friends cannot check out your guest streams themselves.<br />$5.99 - 55 minutes</td>
+<td  width="15%" style="color:navy;"><b><input CHECKED type=radio>'Shared' Control Room</b><br />
+<font style="font-size:10pt;">Everyone gets their own 'control room' like you see and can pick what 
+they want to watch among your guest streams if they are on your 
+<font color=red><i><span id="txtout1"></span></i>.TheGet.io</font> page, but only the stream <i><u>you</u></i> choose here
+goes to Facebook and Youtube (no fighting over that!).<br />$9.99 - 55 minutes</td>
+<td  align="center" width="10%" style="color:navy;"><p style="float:center">Pay and Go LIVE<br />NOW NOW NOW<br /><input style="float:center;" type=submit name=submit value=" Do It. " /></p>  </td>
+</tr><tr>               
+<td  style="color:navy;" colspan="3"> 
+<p><b>Register now for your future recurring shows or for future events</b><br />
+...so you can get going <i><u>fast</u></i> at show time.  You can also view all pricing plans.</p>   
+</td>
+</tr><tr>
+<td  style="color:navy;" colspan="3"> 
 
-<p><input style="float:right;" type=submit name=submit value="Pay and GO LIVE Now Now Now" /></p>   
-                
-<p><b>SetUp for Daily/Weekly/Monthly Broadcasts...</b></p>   
-                
-<center><p align="center" style="float:center;"><b><h2>Other Choices for Scheduled Events</h2></b></p></center>
-
-<p>Once you are live, return to this menu to get this text to Tweet, email, share on Facebook or whatever...<br />&nbsp;<br />
-<b>Party:</b> <span>We're expanding our party NOW to online video! Join us at https://<span id="txtout1"></span>.innoc.us - contribute your own video or just watch! If U miss it catch it later on my Utube.</span>                
-<br />&nbsp;<br />
-<b>Business:</b> <span>Imprtnt Video Conference: Pls join us now at https://<span id="txtout2"></span>.innoc.us - contribute your video or just watch.</span>                
-</p>   
-
-<p>&nbsp;</p>  
+<table cellpadding="8" border="0" >
+<td valign="top" style="border:0;color:navy;" rowspan="3"><b>I set up beforehand&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b><br />just log me in&nbsp;&nbsp;&nbsp;&nbsp;<br /></td>
+<tr><td style="border:0;color:navy;" align="right"><span style="float:right;text-align:right">Channel name or email: </span></td><td><input  class="pop" type=text length="8" placeholder="email/channel" />
+</td></tr>
+<tr><td style="border:0; color:navy; text-align:right;" align="right"><span style="float:right;text-align:right">Password: </span></td><td><input type=text class="pop"  length="8" placeholder="***" />
+</td></tr></table>  
+</td>                
+</tr></table>  
 </div>
     
-<div id="pmenu" style="width:75%;font-size:9pt;font-color:navy;overflow:auto; height:300;" title="Dev Menu for Innoc.us">
+<div id="pmenu" style="width:75%;font-size:9pt;font-color:navy;overflow:auto; height:450;" title="Dev Menu for Innoc.us">
     <h2>Dev Menu</h2>
     
     <p><b>SetUp for Daily/Weekly/Monthly Broadcasts...</b></p> 
@@ -188,4 +182,3 @@ document.getElementById('msg').innerHTML = "Last script in page...";
 </script>
 </body>
 </html>
-

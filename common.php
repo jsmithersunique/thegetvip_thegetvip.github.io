@@ -6,10 +6,9 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 if($_SERVER['SERVER_PORT'] != 443) {
    header("HTTP/1.1 301 Moved Permanently");
-   header("Location: https://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
+   header("Location: https://".$_SERVER['HTTP_HOST']);
    exit();
 }
-
 $mystart = $_SERVER{'HTTP_HOST'};
 $mystart = str_ireplace("/","",$mystart);
 $mystart = str_ireplace("http:","",$mystart);
@@ -17,12 +16,13 @@ $mystart = str_ireplace("https:","",$mystart);
 $mystart = str_ireplace($_SERVER['SCRIPT_NAME'],"",$mystart);
 $mystart = str_ireplace("innoc.usio","",$mystart);
 $mystart = str_ireplace("innoc.us","",$mystart);
+$mystart = str_ireplace("theget.io","",$mystart);
 $mystart = str_ireplace(".","",$mystart);
 $_SESSION["subd"] = $mystart;
 //print $_SESSION["subd"];
 if (strlen($mystart) == 0) {
     $_SESSION["subd"] = "www";
-    header("Location: https://www.innoc.us" . $_SERVER['SCRIPT_NAME']); /* Redirect browser */
+    header("Location: https://" . $_SESSION["subd"] . ".theget.io"); /* Redirect browser */
     exit();
 }
 
