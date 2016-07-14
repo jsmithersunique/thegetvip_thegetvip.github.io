@@ -24,7 +24,21 @@ getxapps();  // API to Wowza works - this gets list of named app on server
     </head>
 <body style="background:url(u.jpg) no-repeat center center fixed; background-size:cover; 
              font-family:verdana,helvetica,swiss;font-size:10pt;color:lightblue;">
-        
+                    <style>
+                       #wrapper {
+                        position: relative;
+                           width:99%; height:95%; align-content: stretch; vertical-align:super;
+                        }
+                       #wrapper span, #wrapper video {
+                           position: absolute; vertical-align: super;
+                           top: 10;
+                       }
+                       .pop td {-moz-border-radius:8px; -webkit-border-radius:8px; border-radius:8px; 
+							border:2px solid lightgray; }
+                      .pop input { background:url('input.gif') norepeat left top; padding:3px;
+							-moz-border-radius:8px; -webkit-border-radius:8px; border-radius:8px; outline:none;}
+                       
+                   </style>
 <script>
 // copy to clipboard: https://jsfiddle.net/jfriend00/v9g1x0o6/
 $(document).ready(function () {
@@ -73,16 +87,7 @@ document.getElementById('msg').innerHTML = "Please approve using your cam/mic - 
 </a><br />
 <span style="vertical-align:super; margin-left:30px; margin-right:30px; text-shadow: 1px 1px 1px #555;" id="msg"></span>
 </div>
-                    <style>
-                       #wrapper {
-                        position: relative;
-                           width:99%; height:95%; align-content: stretch; vertical-align:super;
-                        }
-                       #wrapper span, #wrapper video {
-                           position: absolute; vertical-align: super;
-                           top: 10;
-                       }
-                   </style>
+
             
 <span style="margin:auto; display:block; text-align:center; text-shadow: 1px 1px 1px #555; font-size:9pt;">
 Touch or click any video to move it/send it to the main video feed everyone sees.<br />
@@ -100,11 +105,7 @@ Tweet, text, email or otherwise notify your friends (with or without cams) to jo
 		</div>
     
 <div id="dialog" style="color:navy; width:75%; font-size:14pt; overflow:auto; height:350;" title="GO LIVE Menu for TheGet.io">
-<style>
-.pop td {-moz-border-radius:8px; -webkit-border-radius:8px; border-radius:8px; 
- border:2px solid lightgray; }
-.pop input { background:url('input.gif') norepeat left top; padding:3px; -moz-border-radius:8px; -webkit-border-radius:8px; border-radius:8px; outline:none;}
-</style><a name="a">&nbsp;</a>
+<a name="a">&nbsp;</a>
 <table class="pop" cellpadding="10" cellspacing="15" width="100%" style="-moz-border-radius:8px; -webkit-border-radius:8px; border-radius:8px; 
  border:2px solid lightgray; ">
 <tr><td style="color:navy;" colspan="3">                
@@ -128,8 +129,9 @@ goes to Facebook and Youtube (no fighting over that!).<br />$9.99 - 55 minutes</
 <td  style="color:navy;" colspan="3"> 
 
 <table cellpadding="8" border="0" >
+<tr>
 <td valign="top" style="border:0;color:navy;" rowspan="3"><b>I set up beforehand&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b><br />just log me in&nbsp;&nbsp;&nbsp;&nbsp;<br /></td>
-<tr><td style="border:0;color:navy;" align="right"><span style="float:right;text-align:right">Channel name or email: </span></td><td><input  class="pop" type=text length="8" placeholder="email/channel" />
+<td style="border:0;color:navy;" align="right"><span style="float:right;text-align:right">Channel name or email: </span></td><td><input  class="pop" type=text length="8" placeholder="email/channel" />
 </td></tr>
 <tr><td style="border:0; color:navy; text-align:right;" align="right"><span style="float:right;text-align:right">Password: </span></td><td><input type=text class="pop"  length="8" placeholder="***" />
 </td></tr></table>  
