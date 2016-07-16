@@ -219,6 +219,7 @@ $(document).on('keydown', function ( e ) {
     }
 }); 
 
+
 function updateClock ( )
 {
   var currentTime = new Date ( );
