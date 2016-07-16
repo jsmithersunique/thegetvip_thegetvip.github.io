@@ -190,7 +190,7 @@ goes to Facebook, Youtube, other destinations (no struggle there!). Better for e
 4.  Navigate to the install folder you specified and run Eclipse; pin to launcher<br />
 5.  Eclipse PHP already has Mylin and Git so go to Help | Eclipse Marketplace and get Toad for mySQL<br />
 6.  Using Window | Perspective | Open Perspective | Other | Git, issue a pull request to github.com/thegetvip/thegetvip.github.io<br />
-
+7.  Email Ron ron@theget.io for db login credentials<br />
 
 
 
