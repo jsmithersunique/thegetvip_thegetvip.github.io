@@ -181,11 +181,22 @@ goes to Facebook, Youtube, other destinations (no struggle there!). Better for e
 &nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Instances:sort=instanceId" target="_blank">AWS Admin</a>
 <br />&nbsp;<br /><a href="https://theget.io:8089" target="_blank">TheGet Webmin</a>
 &nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://theget.io:8088" target="_blank">TheGet Wowza Control Panel</a>
-&nbsp;&nbsp;|&nbsp;&nbsp;<a target="_blank" href="https://github.com/thegetvip">TheGet GitHub Repo</a>
+&nbsp;&nbsp;|&nbsp;&nbsp;<a target="_blank" href="https://github.com/thegetvip">TheGetvip GitHub Repo</a></p> 
+
+<p><b></b>Connect to the project from Ubuntu 16.04 LTS</b><br />
+1.  Download Eclipse Neon (latest version) from Eclipse.org<br />
+2.  Untar anywhere and run eclipse-install<br />
+3.  Select the PHP developer's version and install<br />
+4.  Navigate to the install folder you specified and run Eclipse; pin to launcher<br />
+5.  Eclipse PHP already has Mylin and Git so go to Help | Eclipse Marketplace and get Toad for mySQL<br />
+6.  Using Window | Perspective | Open Perspective | Other | Git, issue a pull request to github.com/thegetvip/thegetvip.github.io<br />
 
 
 
-</p> 
+
+
+</p>
+
 <p>&nbsp;</p> 
 </div>
     
