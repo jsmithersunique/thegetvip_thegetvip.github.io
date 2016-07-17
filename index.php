@@ -71,7 +71,7 @@ document.getElementById('msg').innerHTML = "Please approve using your cam/mic - 
              <img src="tv.jpg" width="95%"/><br />&nbsp;<br /><img src="tv.jpg" width="95%"/>
              <br />&nbsp;<br /><span style="font-size:8pt;">Stream to<br /><img  title="Sign up before you can stream - click the big video or the ... menu at top right." src="fb.png" width="50"/><br />(not connected)
 <br />&nbsp;<br />&nbsp;<br />
-<a target="_blank" style="color:lightblue;" href="http://theget.io/wordpress">blog</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a  target="_blank"  style="color:lightblue;" href="http://speedtest.net">speedtest</a>&nbsp;&nbsp;|&nbsp;support&nbsp;&nbsp;|&nbsp;prices
+<a target="_blank" style="color:lightblue;" href="http://theget.io/io">blog</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a  target="_blank"  style="color:lightblue;" href="http://speedtest.net">speedtest</a>&nbsp;&nbsp;|&nbsp;support&nbsp;&nbsp;|&nbsp;prices
 <br />&nbsp;<br />
 Add a ProCam/Teradek/etc.
 </span>
