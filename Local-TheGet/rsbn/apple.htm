@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <title>RSBN FreedomShare</title>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script src="signaling_channel.js"></script>
+        <script src="sdp.js"></script> 
+        <script src="main.js"></script>
+    </head>
+    <body  style="font-family:verdana,swiss,helvetica;">
+        <header>
+            <div id="heading">
+                <h2><b><font  style="color:red;">RSBN</font> <font  style="color:navy;">FreedomShare</font> for Apple</b></h2><br/>
+            </div>
+            <div id="owr-logo"></div>
+        </header>
+         <section id="main-section">
+             <div id="video-container">
+                <video id="self_view" class="shadow owr-overlay-video" autoplay muted></video>
+                <!-- <video id="remote_view" class="shadow owr-overlay-video" autoplay></video> -->
+            </div>
+            <div id="settings-container">
+                <input type="hidden" id="session_txt" value="FreedomShare">
+                <input class="btn" type="button" id="join_but" value="Start Streaming">
+                <input class="btn" type="hidden" id="call_but" value="Call"><br>
+                <input type="checkbox" id="audio_cb" checked value="1">Audio&nbsp;&nbsp;&nbsp; 
+                <input type="checkbox" id="video_cb" checked value="1">Video&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id="chat_cb" checked value="1">Chat
+                <div id="audio-only-container"></div>
+                <div id="share-container">
+                    <!-- Send link to a friend: <a id="share_link" target="_blank" href=""></a> -->
+                </div>
+            </div>
+            <!-- <div id="chat_div"></div>
+            <div id="chat-container">
+                <input type="sendtext" id="chat_txt" disable placeholder="Type here">
+                <input type="button" class="btn" id="chat_but" value="Send">
+            </div>
+            <div id="log_div"></div>
+            -->
+        </section>
+        <footer>
+
+        </footer>
+    </body>
+</html>
