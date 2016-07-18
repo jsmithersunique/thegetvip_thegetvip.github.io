@@ -3,7 +3,7 @@
 include 'common.php';
 sayyes (); // prints sever vars in an HTML comment so view source on the page
 getxapps (); // API to Wowza works - this gets list of named app on server
-             // /////////////////////////////////////////////////////////////////////
+             // ///////////////////////////////////////////////////////////////////
 ?>
 <!doctype html xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
 <html>
