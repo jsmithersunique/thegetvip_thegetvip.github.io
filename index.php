@@ -6,7 +6,6 @@ getxapps (); // API to Wowza works - this gets list of named app on server
              // /////////////////////////////////////////////////////////////////////////
 ?>
 <!doctype html xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
-<meta charset="UTF-8">
 <html>
 <head>
 <title>TheGet.io - multi-cam TV NOW from your event with your thumbs and
