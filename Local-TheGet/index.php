@@ -3,11 +3,10 @@
 include 'common.php';
 sayyes (); // prints sever vars in an HTML comment so view source on the page
 getxapps (); // API to Wowza works - this gets list of named app on server
-/////////////////////////////////////////////
+//2:38///////////////////////////////////////////
 ?>
 <!doctype html xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
 <html>
-
 <head>
 <title>TheGet.io - multi-cam TV NOW from your event with your thumbs and
 	chums. This is your tv control room.</title>
