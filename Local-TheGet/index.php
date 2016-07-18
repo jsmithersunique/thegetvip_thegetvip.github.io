@@ -207,6 +207,21 @@ goes to Facebook, Youtube, other destinations (no struggle there!). Better for e
 6.  Using Window | Perspective | Open Perspective | Other | Git, issue a pull request to github.com/thegetvip/thegetvip.github.io<br />
 7.  Email Ron ron@theget.io for db login credentials<br />
 </p>
+<p><b>Port Map (incomplete)</b><br />
+21		FTPS<br />
+22		SSH/SFTP<br />
+80		HHTP<br />
+81 		Wowza app cam1<br />
+82 		Wowza app cam2<br />
+443		HTTPS (conflict with secure streaming Apache vs Wowza)<br />
+1935	Generic streaming port (default request/outgoing)
+3389	RD port<br />
+6970	RTP Datagram (start)
+8087 	Wowza REST API<br />
+8088	Wowza Admin<br />
+8089	Wowza REST API Documentation/Test<br />
+
+</p>
  
 <p>&nbsp;</p> 
 </div>
