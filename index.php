@@ -3,7 +3,7 @@
 include 'common.php';
 sayyes (); // prints sever vars in an HTML comment so view source on the page
 getxapps (); // API to Wowza works - this gets list of named app on server
-            // /////////////////////////////////////////////////////////////////////////
+             // /////////////////////////////////////////////////////////////////////////
 ?>
 <!doctype html xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
 <meta charset="UTF-8">
@@ -80,12 +80,10 @@ document.getElementById('msg').innerHTML = "Please approve using your cam/mic - 
 								title="Get your stream going before you invite - click the big video or the ... menu at top right."
 								src="tw.png" style="width: 25px;" /></td>
 						</tr>
-					</table>
-					<br />&nbsp; <img src="tv.jpg" width="95%" /><br />&nbsp;<br /> <img
-					src="tv.jpg" width="95%" /><br />&nbsp;<br />
-				<img src="tv.jpg" width="95%" /> <br />&nbsp;<br />
-				<span style="font-size: 8pt;">Stream to<br />
-					<img
+					</table> <br />&nbsp; <img src="tv.jpg" width="95%" /><br />&nbsp;<br />
+					<img src="tv.jpg" width="95%" /><br />&nbsp;<br /> <img
+					src="tv.jpg" width="95%" /> <br />&nbsp;<br /> <span
+					style="font-size: 8pt;">Stream to<br /> <img
 						title="Sign up before you can stream - click the big video or the ... menu at top right."
 						src="fb.png" width="50" /><br />(not connected) <br />&nbsp;<br />&nbsp;<br />
 						<a target="_blank" style="color: lightblue;"
@@ -99,14 +97,14 @@ document.getElementById('msg').innerHTML = "Please approve using your cam/mic - 
 					width="66%">
 					<!--       <?php
 
-if (isset ( $_SESSION ["AUTH"] )) {
+					if (isset ( $_SESSION ["AUTH"] )) {
 						print '<input style="" type="button" id="start" onclick="start(true)"
                value="Start Streaming Your Cam Now"></input><br />&nbsp;<br />';
 					}
 					?>
            <?php
 
-if (! isset ( $_SESSION ["AUTH"] )) {
+											if (! isset ( $_SESSION ["AUTH"] )) {
 												print '<font style="font-size:10pt;color:lightblue;"><i>Not Live Yet.</i>
            &nbsp;&nbsp;Click <a href="#" style="font-size:10pt;color:lightblue;" id="showxmenu"> the
              menu</a> at upper right for your broadcast/meeting/party/class choices.</font>';
@@ -158,12 +156,10 @@ Tweet, text, email or otherwise notify your friends (with or without cams) to jo
 								title="Get your stream going before you invite - click the big video or the ... menu at top right."
 								src="su.png" style="width: 25px;" /></td>
 						</tr>
-					</table>
-					<br />&nbsp; <img src="tv.jpg" width="95%" /><br />&nbsp;<br />
-				<img src="tv.jpg" width="95%" /><br />&nbsp;<br />
-				<img src="tv.jpg" width="95%" /><br />&nbsp;<br />
-				<span style="font-size: 8pt;">Stream to<br />
-					<img
+					</table> <br />&nbsp; <img src="tv.jpg" width="95%" /><br />&nbsp;<br />
+					<img src="tv.jpg" width="95%" /><br />&nbsp;<br /> <img
+					src="tv.jpg" width="95%" /><br />&nbsp;<br /> <span
+					style="font-size: 8pt;">Stream to<br /> <img
 						title="Sign up before you can stream - click the big video or the ... menu at top right."
 						src="yt.png" width="50" /><br />(not connected)
 				</span> <br />&nbsp;<br />&nbsp;<br /> <span id="clock"
@@ -209,9 +205,8 @@ Tweet, text, email or otherwise notify your friends (with or without cams) to jo
 					<input class="pop" type=text length="6" id="handle" name="handle"
 					placeholder="myChannel" /><img style="width: 40px; float: right;"
 					src="arrow.dr.png" /><br /> direct your friends (with or without
-					cams) to<br />
-				<font color=red><i><span id="txtout"></span></i>.TheGet.io</font> <span
-					style="font-size: 9pt;">(make it short for tweeting)</span></td>
+					cams) to<br /> <font color=red><i><span id="txtout"></span></i>.TheGet.io</font>
+					<span style="font-size: 9pt;">(make it short for tweeting)</span></td>
 				<td style="color: navy; background: lightgreen;" colspan="2">
 					<table cellpadding="8" border="0">
 						<td valign="top" style="border: 0; color: navy;" rowspan="3"><b>...OR...<br />I&nbsp;set&nbsp;up&nbsp;beforehand
@@ -253,9 +248,8 @@ Tweet, text, email or otherwise notify your friends (with or without cams) to jo
 					events.<br />$9.99 - 65 minutes</td>
 			<td align="center" width="10%" style="color: navy;"><p
 					style="float: center">
-					Pay and Go LIVE<br />NOW NOW NOW<br />
-					<input style="float: center;" type=submit name=submit
-						value=" Do It. " />
+					Pay and Go LIVE<br />NOW NOW NOW<br /> <input
+						style="float: center;" type=submit name=submit value=" Do It. " />
 				</p></td>
 			</tr>
 			<tr>
@@ -284,8 +278,8 @@ Tweet, text, email or otherwise notify your friends (with or without cams) to jo
 				target="_blank" style="color: navy;" href="http://speedtest.net">speedtest</a>
 			&nbsp;&nbsp;|&nbsp;&nbsp;<a
 				href="https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Instances:sort=instanceId"
-				target="_blank">AWS Admin</a> <br />&nbsp;<br />
-			<a href="https://theget.io:8089" target="_blank">TheGet Webmin</a>
+				target="_blank">AWS Admin</a> <br />&nbsp;<br /> <a
+				href="https://theget.io:8089" target="_blank">TheGet Webmin</a>
 			&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://theget.io:8088"
 				target="_blank">TheGet Wowza Control Panel</a>
 			&nbsp;&nbsp;|&nbsp;&nbsp;<a target="_blank"
