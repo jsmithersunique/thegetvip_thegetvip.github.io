@@ -209,7 +209,8 @@ goes to Facebook, Youtube, other destinations (no struggle there!). Better for e
 
 <p>Using Eclipse RSE to move files into production:<br />
 Rename the file you want to replace to something like index.x.php then drag/drop index.php onto the folder.<br/>
-You will get a 'Permission Denied' error if you try to overwrite a file (and having the backup is nice, too).</p>
+You will get a 'Permission Denied' error if you try to overwrite a file (and having the backup is nice, too).<br />
+If something like index.x.php already exists, then delete it before all of the above.  This kluge is because of a documented RSE bug.</p>
 
 <p><b>Port Map (incomplete)</b><br />
 22		SSH/SFTP<br />
