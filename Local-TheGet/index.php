@@ -186,7 +186,7 @@ goes to Facebook, Youtube, other destinations (no struggle there!). Better for e
 &nbsp;&nbsp;|&nbsp;&nbsp;<a  target="_blank"  style="color:navy;" href="http://speedtest.net">speedtest</a>
 &nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Instances:sort=instanceId" target="_blank">AWS Admin</a>
 <br />&nbsp;<br /><a href="https://theget.io:8089" target="_blank">TheGet.io Web Webmin</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://theget.io:8089" target="_blank">TheGet.us Wowza Webmin</a>
-&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://theget.us:8088" target="_blank">TheGet Wowza Control Panel</a>
+&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://theget.us:8088" target="_blank">TheGet.us Wowza Streaming Server Control Panel</a>
 &nbsp;&nbsp;|&nbsp;&nbsp;<a target="_blank" href="https://github.com/thegetvip">TheGet GitHub Repo</a></p>
 
 <p>Wowza Install Path:  /usr/local/WowzaStreamingEngine-4.5.0/</p>
@@ -209,10 +209,10 @@ goes to Facebook, Youtube, other destinations (no struggle there!). Better for e
 <p><b>Port Map (incomplete)</b><br />
 22		SSH/SFTP<br />
 80		HHTP<br />
-81 		Wowza Control
+81 		Wowza Control<br />
 82		Wowza app cam1<br />
 83 		Wowza app cam2<br />
-443		HTTPS (conflict with secure streaming Apache vs Wowza)<br />
+443		HTTPS (former conflict with secure streaming Apache vs Wowza)<br />
 1935	Generic streaming port (default request/outgoing)
 3389	RD port<br />
 6970	RTP Datagram (start)
