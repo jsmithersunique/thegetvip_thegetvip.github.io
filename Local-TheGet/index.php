@@ -181,18 +181,18 @@ goes to Facebook, Youtube, other destinations (no struggle there!). Better for e
     <h2>Dev Menu</h2>
     
     <p><b>Special Developer Links...</b></p>
-    <p><a id="ll" target="_blank" style="color:navy;" href="http://theget.io/wordpress">blog</a>
-&nbsp;&nbsp;|&nbsp;&nbsp;<a id="ll" target="_blank" style="color:navy;" href="http://theget.io/wordpress/wp-admin">blog login</a>
+    <p><a id="ll" target="_blank" style="color:navy;" href="http://theget.io/wp">blog</a>
+&nbsp;&nbsp;|&nbsp;&nbsp;<a id="ll" target="_blank" style="color:navy;" href="http://theget.io/wp/wp-admin">blog login</a>
 &nbsp;&nbsp;|&nbsp;&nbsp;<a  target="_blank"  style="color:navy;" href="http://speedtest.net">speedtest</a>
 &nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Instances:sort=instanceId" target="_blank">AWS Admin</a>
-<br />&nbsp;<br /><a href="https://theget.io:8089" target="_blank">TheGet Webmin</a>
-&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://theget.io:8088" target="_blank">TheGet Wowza Control Panel</a>
+<br />&nbsp;<br /><a href="https://theget.io:8089" target="_blank">TheGet.io Web Webmin</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://theget.io:8089" target="_blank">TheGet.us Wowza Webmin</a>
+&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://theget.us:8088" target="_blank">TheGet Wowza Control Panel</a>
 &nbsp;&nbsp;|&nbsp;&nbsp;<a target="_blank" href="https://github.com/thegetvip">TheGet GitHub Repo</a></p>
 
 <p>Wowza Install Path:  /usr/local/WowzaStreamingEngine-4.5.0/</p>
 
 <P>Two API Methods are used:<br />
-1. TheGet REST API Swagger UI: <a target="_blank" href="/TheGet.REST.zip">download this tar</a>, unzip it, open index.html and click 'Exlpore' in upper right.<br />
+1. TheGet REST API Swagger UI: <a target="_blank" href="/TheGet.REST.zip">download this tar</a>, unzip it, open index.html, change .io to .us, and click 'Exlpore' in upper right.<br />
 2. Java source API - <a target="_blank" href="https://www.wowza.com/forums/content.php?12-Wowza-Streaming-Engine-Java-API">Documentation Starts here</a></p>
 
 <p><a href="/wwebrtc" target="_blank">Wowza Local WebRTC examples</a> (<a href="http://webrtc.github.io/samples" target="_blank">WebRTC.org git is here</a>)</p>
@@ -207,11 +207,11 @@ goes to Facebook, Youtube, other destinations (no struggle there!). Better for e
 7.  Email Ron ron@theget.io for db login credentials<br />
 </p>
 <p><b>Port Map (incomplete)</b><br />
-21		FTPS<br />
 22		SSH/SFTP<br />
 80		HHTP<br />
-81 		Wowza app cam1<br />
-82 		Wowza app cam2<br />
+81 		Wowza Control
+82		Wowza app cam1<br />
+83 		Wowza app cam2<br />
 443		HTTPS (conflict with secure streaming Apache vs Wowza)<br />
 1935	Generic streaming port (default request/outgoing)
 3389	RD port<br />
@@ -219,7 +219,6 @@ goes to Facebook, Youtube, other destinations (no struggle there!). Better for e
 8087 	Wowza REST API<br />
 8088	Wowza Admin<br />
 8089	Wowza REST API Documentation/Test<br />
-
 </p>
  
 <p>&nbsp;</p> 
