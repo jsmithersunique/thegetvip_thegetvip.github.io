@@ -202,10 +202,15 @@ goes to Facebook, Youtube, other destinations (no struggle there!). Better for e
 2.  Un-tar anywhere and run eclipse-install<br />
 3.  Select the PHP developer's version and install<br />
 4.  Navigate to the install folder you specified and run Eclipse; pin to your launcher<br />
-5.  Eclipse PHP already has Mylin and Git so go to Help | Eclipse Marketplace and get Toad for mySQL<br />
+5.  Eclipse PHP already has Mylin and Git so go to Help | Eclipse Marketplace and get Toad for mySQL & Remote System Exlporer RSE (for sFTP).<br />
 6.  Using Window | Perspective | Open Perspective | Other | Git, issue a pull request to github.com/thegetvip/thegetvip.github.io<br />
 7.  Email Ron ron@theget.io for db login credentials<br />
 </p>
+
+<p>Using Eclipse RSE to move files into production:<br />
+Rename the file you want to replace to something like index.x.php then drag/drop index.php onto the folder.<br/>
+You will get a 'Permission Denied' error if you try to overwrite a file (and having the backup is nice, too).</p>
+
 <p><b>Port Map (incomplete)</b><br />
 22		SSH/SFTP<br />
 80		HHTP<br />
